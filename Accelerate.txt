@@ -1,0 +1,278 @@
+Week1 - Self study on Java Basics
+• OOPS concepts in Java: Data Abstraction, Encapsulation, Inheritance, Polymorphism, Association, Composition and Aggregation, coupling, cohesion,
+• Fundamental Programming Structures, basic Data Types, - Types of classes/interfaces, packages, access control
+• Overloading, Overriding
+• Serialization & basic exception handling/chaining
+Content Overview:
+• OOPS concepts in Java: Data Abstraction, Encapsulation, Inheritance, Polymorphism, coupling, cohesion
+• Fundamental Programming Structures, basic Data Types, - Types of classes/interfaces, packages, access control
+• Collection Framework, Overloading, Overriding
+• Serialization & basic exception handling/chaining
+• Multithreading -
+1. Thread Life Cycle
+2. Callable and Future
+3. ExecutorService
+4. ThreadPoolExecutor
+5. Fork/Join
+
+Week 1- Assignment 1
+Project: Online Survey system
+
+Requirement: There will be 2 types of users - one Admin user, who logs in and creates new survey in DB and provides/add questions related to the survey and sees the result of the surveys.
+Other user type is normal users, who logs in and fill up the surveys and submit them. The filled-up surveys along with user information gets stores in DB.
+
+Scope: You need to identify what all entities are involved and create respective classes/interfaces/abstract classes including variables and functions required to perform desired functionality. Please provide meaningful names to variables and various methods.
+
+Note: You can provide dummy implementation of methods and assume dummy DB connection implementation.
+
+
+Week 1- Assignment 2
+Bank account application
+Requirement – Two type of account user can create and perform the various action on same.
+1. Account - balance, account number
+2. Current Account - balance, account number, transaction fee
+3. Saving Account - balance, account number, interest rate
+
+Feature of any account -
+deposit - deposit the funds into account if amount is greater than 0.
+withdraw - Withdraw the funds from account if amount is greater than 0 and withdraw amount must be less than or equal to current balance.
+checkBalance - Print the balance from respective Account.
+applyInterest - Interest will applied to balance. (Only applicable for Saving account)
+
+Transaction Fee will be applied for Current Account transaction.
+So, user can perform below action items -
+1. Create Account 2. Deposit fund 3. Apply Interest 4.Withdraw fund 5. Check Balance
+Note – Need to use concept of class, object, constructor, abstraction, polymorphism, Encapsulation & OOPS feature.
+
+
+Week 1- Assignment 3
+Project Name: Online Order Processing System
+Scenario : you are working on the development team of an online order processing system for a retail company. Customers can place orders through the website, and the system is responsible for processing these orders. You are tasked with handling various exceptions that may occur during order processing.
+Scope :
+• Order Processing Exceptions: The system should handle and propagate exceptions related to order processing effectively.
+
+• Logging: All exceptions should be logged for auditing and debugging purposes.
+
+• Custom Exceptions: Create custom exceptions to represent specific error scenarios related to order processing.
+
+• Exception Propagation: When an order processing exception occurs, it should propagate to higher levels of the application to notify the user or take appropriate actions.
+
+
+
+
+
+Week2 - Self study on Java Basics
+Generics and Collection Framework
+
+
+Interfaces - Default Methods
+Optional API
+-- When to use optional
+-- Different ways to create an optional
+-- How to use isPresent() , map() ,else() methods
+Double colon operator
+-- Constructor/method reference
+Undertsanding Stream API
+-- Overview - java.util.stream types (Stream, Collector, ...)
+-- Parallel Processing using Streams
+Stream Processing
+-- Using filter()
+-- Sorting / Comparator.comparing()
+-- Using Map/FlatMap
+-- Foreach
+-- Reduce
+-- Other operations: peek(), distinct(), limit(), skip()
+-- Result producing terminal operations - collect, min/max …
+-- Collectors - Partitioning & Grouping
+Date & Time API
+-- Overview and Limitations of Previous API
+-- Periods and Durations
+-- Performing Calculations on Data/Time types
+Reactive Streams - JDK 9
+Functional Interfaces
+-- Core Interfaces - Predicates/Consumer/Supplier/Functions
+Lambda Expression
+
+Week 2- Assignment 1
+• Create a custom class Employee, add fields like name, age, salary, and address. Create 10 custom objects with respective fields and sort this object on basis of Age and Salary.
+• Create a HashMap, where keys (Names) are string and values (Age) are integers. Add 10 entries in the HashMap. Retrieve the age of specific person. Iterate over the map. Also sort the map based on age (values).
+• LinkedList Implementation
+o Where a node represents elements in the list.
+o Methods to add elements in beginning, end and at specific positions.
+o Method to remove the element from specific position.
+o Method to print all the elements.
+o It should take any input, integer, string, custom objects etc.
+• Stack Implementation using ArrayList
+o Push and Pop the elements in the stack
+o Check the status of stack whether it is empty or not.
+o Display the elements in the Stacks.
+o It should take any input, integer, string, custom objects etc.
+• Array List implementation using Array:
+o Add and remove the elements from the arrays.
+o Display the elements in the ArrayList.
+o It should take any input, integer, string, custom objects etc.
+
+Week 2- Assignment 2
+1. Search Criteria using Lambda Expression
+a. Create a list of 1000 Person Object with attributes as Id, Name, Age, Sex
+b. Outcome should return to the people whose age is in the range within the range specified from command prompt.
+c. The code should be written with the following approaches.
+i. create a method which accept List<Person> object and second parameter as age range. It should return Person objects.
+public static List<Person> processPersons(List<Person> object, int low, int high)
+
+ii. create a searchcriteria class and use that in the method
+public static List<Person> processPersons(List<Person> object, CheckPerson tester)
+
+iii. specify criteria code in CheckPerson as anonymous class
+public static List<Person> processPersons(List<Person> object)
+
+iv. use Predicate
+public static void printPersonsWithPredicate(List<Person> object, Predicate<Person> tester)
+
+2. Using Collectors & Peek
+1. Create a list of 1000 Employee Object with 3 attributes as Id, Name and Salary
+2. For each employee increment the salary by 20%
+3. Sort the object based on incremented salary in descending order and return the map with key as Id & value as Employee object
+
+
+
+
+Week3 - Self study on Java Basics
+Self Study Topics 
+JDBC
+• Driver Class, Database connection, Statement vs Prepared Statement vs Callable Statement, Execute Query vs Execute update, Result Set
+• Database connection pool creating manually.
+
+Multithreading --> Callable, Future, ExecutorService, ThreadPoolExecutor, BlockingQueue, Fork/Join,Retenrant lock,countdown latches
+
+Java I/O  Java NIO vs Java IO, Java NIO API, Channels, Files, Paths
+
+Week 3- Assignment 1
+Data comparator
+Write an application to compare the two files and write the output results in a separate file.
+Acceptance criteria:
+• File Input: The application should allow users to specify two input files that need to be compared.
+• Comparison Logic: The application should compare the contents of the two files line by line.
+• Matched Lines: The application should identify lines that match in both files and provide information about the matching lines.
+• Unmatched Lines: The application should identify lines that do not match in both files and provide information about the differences.
+• Output File: The application should generate an output file containing the comparison results, including matched and unmatched lines. Prefer excel format to write the results.
+• Error Handling: The application should handle errors gracefully, such as file not found, file read errors, or other exceptions.
+• Logging and Reporting: It may log events, errors, and summary information for the comparison process.
+• Efficiency: The application should handle large files efficiently without consuming excessive memory.
+• Configurability: It could allow users to configure options like case sensitivity, ignoring whitespace, or choosing the comparison mode (line-by-line, word-by-word, etc.).
+
+
+Week 3- Assignment 2
+Project Name: Online ticket booking
+Scnerio : Develop an online ticket booking system for a popular event. This system allows users to search for available tickets, reserve seats, and make bookings. Multiple users can simultaneously access and interact with the system.
+Scope :
+• Concurrent Ticket Searches: Multiple users can search for available tickets at the same time. How can you ensure efficient concurrent searches without conflicts?
+
+• Seat Reservation: Users can select and reserve seats. You need to prevent double booking or conflicts when two users try to reserve the same seat simultaneously.
+
+• Booking Confirmation: Once a user confirms a booking, the system needs to ensure that the selected seats are no longer available to others.
+
+
+Week 3- Assignment 3C
+• Create a table inside mySQL DB, and perform below operations:
+o Create Employee Table with following column:, emp_id, name, age, address, salary, DOJ.
+o Create JDBC connection and find the employee details for the employees whose name start with ‘S’.
+o Also find list of employess, who joined after 2020.
+o Create Stored procedure to get the list employees whose salary are more than 5000, Invoke this stored procedure through java and print the require output in the console.
+ 
+ 
+ 
+ 
+Week4 - Self study on Java Basics
+Self Study Topics
+MySQL:
+DDL, DML, DCL and Select Statements
+Tables, Constraints, Sequences, Set Operators, Joins and Views
+Data Types, User Defined Data Types
+Partitioning, Indexes, Hints and Query Optimization
+Procedures, Functions, Triggers and Packages, Optimizations and best practices.
+Loops, Cursor, Control Statements, Exceptions and Dynamic Queries
+
+Github: Write code and checking the same to Git, Pull requests, code review. Get awareness to Impetus GitLab and how to do git operations using it.
+
+Maven - pom, expected package structure, build process/phases, commands for compiling/packaging.
+CI/CD tool Jenkins: why it is used, how Maven, Github and code quality tools are integrated for CI/CD in build jobs.
+
+- Structural patterns & their applications - like MVC, Adapter etc.
+
+
+
+Week5 - self study on Hibernate and Spring Framework
+Topics for Self -Study: Hibernate
+-- What is the problem with JDBC - paradigm mismatch
+-- What is ORM?
+-- Understanding different components of Hibernate
+-- How to persist objects using Hibernate
+-- How to use mapping files, configuration files and Session object
+-- Instance states
+-- How to generate ID
+-- How to implement Inheritance in Hibernate
+-- Working with relationship between entities
+-- Transactions in Hibernate
+-- Querying with HQL (Hibernate Query Language)
+-- Named and native queries
+-- Working with Criteria Interface
+-- Query by example – QBE
+-- Caching and fetching
+-- Using Hibernate in different types of applications
+
+
+Topics for Self- Study: Spring Framework
+-- Introduction to Spring 5.0
+-- Steps to use Spring Framework in applications
+-- Understanding IOC and Dependency Injection
+-- Understanding the bean life-cycle – Auto wiring and bean scopes
+-- Understanding spring boot
+-- Annotation-based dependency injection
+-- Adding behavior to an application using aspects – AOP
+-- Creating and applying aspects
+-- Introducing data access with Spring – JDBC through spring
+-- Transactions in a Spring environment
+-- Getting started with Hibernate in a Spring environment
+-- Working with Spring MVC
+-- Spring MVC Form Handling
+
+
+Week6 - Self study on RestAPI and microservices
+Topics for Self- Study: REST APIs
+-- Representational State Transfer
+-- Architectural Style (Technically not a standard)
+-- Idea: a network of web pages where the client progresses through an application by selecting link
+-- When client traverses link, accesses new resource (i.e. transfers state)
+-- Uses existing standards e.g. HTTP
+
+Topics for Self- Study: Microservices (using Swagger & Spring Boot)
+-- why Microservice & their characteristics
+-- Architecture OR Microservice Design Patterns
+-- Inter-process communication
+-- Transactions Across Microservices
+-- Microservices with DevOps
+-- Benefits/Challenges/Overheads/Best Practice
+
+
+Week7 - Self study on Linux and Code quality
+Linux and Code Quality
+
+• Linux evolution and popular operating systems
+• Command line basics
+• Using command line to get help
+• Using directories and listing files
+• Creating, moving and deleting files
+• Searching and extracting data from files
+• Turning commands into scripts
+• Creating users and groups
+• Managing file permissions and ownership
+• Text editing with Vi
+• Cron
+Quality:
+• Junit tests, Code coverage, static code analysis. We are assuming these are theoretical
+• Cobertura, Sonar Quality Gates
+• Integration of quality gates with CI/CD tools like Jenkins and accessing quality reports on Sonar Dashboard.
+• Tools for JVM Profiliing: Visual VM, Java Mission Control
+• Thread vs Heap Dump, what and how to analyze.
+
